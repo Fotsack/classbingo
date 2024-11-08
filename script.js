@@ -7,7 +7,7 @@ const bingoWords = [
     "Sie brauchen eine Abbildung","Ändern Se das ma","Thorsten",
     "Sie müssen miteinander reden","Wo ist die Datei vom letzten mal",
     "Plunder","Machen Se das ma weg","wieder mal eine ganze Stunde verschwendet",
-    "Wiederholt Namen bei Anwesenheit","mehr als 5 min. zu spät"
+    "Wiederholt Namen bei Anwesenheit","mehr als 5 min. zu spät","test"
   ];
   
   // Generate a new board with random strings
@@ -16,7 +16,7 @@ const bingoWords = [
     board.innerHTML = ''; // Clear previous board
   
     // Shuffle the list of bingo words and take the first 16
-    const shuffledWords = shuffleArray(bingoWords).slice(0, 16);
+    const shuffledWords = shuffleArray(bingoWords).slice(0, 17);
   
     // Populate the board with cells
     shuffledWords.forEach((word) => {
